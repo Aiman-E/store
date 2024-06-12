@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ORDER-{YYYY}-{MM}-{#####}",
+ "creation": "2024-06-09 22:17:10.279044",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "column_break_mpcc",
+  "retail_price",
+  "section_break_kft5",
+  "address_line_1",
+  "address_line_2",
+  "address_line_3__landmark",
+  "pincode",
+  "column_break_nzir",
+  "country",
+  "state",
+  "city",
+  "customer_details_section",
+  "user",
+  "customer_name",
+  "column_break_cdus",
+  "status",
+  "phone_number",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_kft5",
+   "fieldtype": "Section Break",
+   "label": "Billing Details"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_cdus",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_3__landmark",
+   "fieldtype": "Data",
+   "label": "Address Line 3 / Landmark"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "column_break_nzir",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "default": "India",
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "default": "India",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "default": "India",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nPlaced\nDelivered"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Store Product"
+  },
+  {
+   "fieldname": "column_break_mpcc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "product.retail_price",
+   "fieldname": "retail_price",
+   "fieldtype": "Currency",
+   "label": "Retail Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-09 23:50:28.634644",
+ "modified_by": "Administrator",
+ "module": "Store",
+ "name": "Store Order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
